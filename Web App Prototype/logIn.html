@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <title>MANAGEMENT Tool</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./img/icon.png"
+    />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="logIn">
+      <img src="./img/2.png" alt="" class="logo" />
+      <div class="form">
+        <div>Username</div>
+        <input type="text" placeholder="please input your Username" />
+      </div>
+      <div class="form">
+        <div>Password</div>
+        <input type="text" placeholder="please input your Password" />
+      </div>
+      <div
+        class="button"
+        onclick="window.localStorage.setItem('isLogin', 'true')"
+      >
+        Log In
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".button").addEventListener("click", function () {
+      location.href = "./index.html";
+    });
+  </script>
+</html>

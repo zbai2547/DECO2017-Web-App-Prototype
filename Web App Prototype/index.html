@@ -1,0 +1,261 @@
+<!DOCTYPE html lang="en-US">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <title>MANAGEMENT Tool</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./img/icon.png"
+    />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+      <img src="./img/2.png" class="logo" />
+      <div class="container">
+        <div class="avatar">
+          <img src="./img/1.png" alt="" />
+        </div>
+      </div>
+      <img src="./img/search.png" alt="" class="search" />
+    </div>
+    <div class="nav-search">
+      <img src="./img/s.png" alt="" />
+      <input type="text" />
+      <img src="./img/Right.png" alt="" class="r" />
+      <div class="nav-search-res">
+        靠近 [kào jìn] <br />
+        prep. near <br />
+        misc. close to <br />
+        (挨近) near; close to; by:
+      </div>
+    </div>
+    <div class="container">
+      <div class="title"><img src="./img/3.png" alt="" />Calander</div>
+      <div class="timeline">
+        <div class="line">
+          <div class="line1">April</div>
+          <div class="line2" style="flex: 1; text-align: center">May</div>
+          <div class="line3">June</div>
+        </div>
+        <div class="time time1">
+          <div>Quiz 1</div>
+          April 10
+        </div>
+        <div class="time time2">
+          <div>Quiz 2</div>
+          May 15
+        </div>
+        <div class="time time3">
+          <div>Final Exam</div>
+          June 05
+        </div>
+        <div class="time-det">
+          <div class="det-t1">QUIZ 1</div>
+          <div class="det-t2">April 10，2021</div>
+          Introduction for quiz 1 <br />
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+          <div style="text-align: right; margin-top: 30px">Building 1</div>
+          <div style="text-align: right">Room 1</div>
+          <div class="up"></div>
+        </div>
+      </div>
+      <div class="title"><img src="./img/4.png" alt="" />Task</div>
+    </div>
+    <div class="container">
+      <div class="task-card">
+        <div class="task-left">
+          <div class="task-title">Current Task</div>
+          <div class="task-card-main">
+            <div class="task-current">
+              <div class="task-current-t">CHINESN A1</div>
+              <div class="task-current-d">汉</div>
+            </div>
+            <div class="task-current-desc">
+              <div class="task-current-desc-t">Estimated Finish Time</div>
+              <div class="task-current-desc-d">20 hours</div>
+              <div class="task-current-desc-t">Spend Time Now</div>
+              <div class="task-current-desc-d">12 hours</div>
+            </div>
+          </div>
+          <div class="task-card-line"></div>
+        </div>
+        <div class="task-right">
+          <div class="task-title">Future task</div>
+          <div class="task-show">
+            <div class="task-undone">
+              <div style="font-weight: bolder" class="task-show-title">
+                Undone
+              </div>
+              <div>
+                <div class="task-show-tip">High Priority</div>
+                <div class="task-show-card" style="background: #e91e63">
+                  <div class="task-show-card-t">CHINESN A2</div>
+                  <div class="task-show-card-d">汉</div>
+                </div>
+              </div>
+              <div>
+                <div class="task-show-tip">Med Priority</div>
+                <div class="task-show-card" style="background: #03a9f4">
+                  <div class="task-show-card-t">CHINESN A3</div>
+                  <div class="task-show-card-d">汉</div>
+                </div>
+              </div>
+              <div>
+                <div class="task-show-tip">Low Priority</div>
+                <div class="task-show-card" style="background: #4caf50">
+                  <div class="task-show-card-t">CHINESN A4</div>
+                  <div class="task-show-card-d">汉</div>
+                </div>
+              </div>
+            </div>
+            <div class="task-completed">
+              <div style="font-weight: bolder" class="task-show-title">
+                Completed
+              </div>
+              <div class="task-show-card" style="background: #ffc107">
+                <div class="task-show-card-t">ENGLISH A1</div>
+                <div class="task-show-card-d">E</div>
+              </div>
+              <div class="task-show-card" style="background: #ffc107">
+                <div class="task-show-card-t">ENGLISH A2</div>
+                <div class="task-show-card-d">E</div>
+              </div>
+            </div>
+          </div>
+          <img src="./img/add.png" alt="" class="add" />
+        </div>
+      </div>
+    </div>
+    <div class="task-modal">
+      <div class="task-modal-inner">
+        <div class="task-modal-title">Add New Task</div>
+        <div class="task-modal-input">
+          <div>Task:</div>
+          <input type="text" placeholder="Please enter" />
+        </div>
+        <div class="task-modal-input">
+          <div>Deadline:</div>
+          <input type="date" placeholder="Please select" />
+        </div>
+        <div class="task-modal-input">
+          <div>Priority:</div>
+          <select name="" id="Priority" placeholder="Please select">
+            <option value="1">High Priority</option>
+            <option value="2">Med Priority</option>
+            <option value="3">Low Priority</option>
+          </select>
+        </div>
+        <div class="task-modal-input">
+          <div>Finish Time:</div>
+          <input type="text" placeholder="Please enter" />
+        </div>
+        <div class="task-modal-input">
+          <div>Is Done:</div>
+          <select name="" id="Done" placeholder="Please select">
+            <option value="1">Undone</option>
+            <option value="2">Completed</option>
+          </select>
+        </div>
+        <div class="task-modal-btn">
+          <div class="cancel">cancel</div>
+          <div class="ok" style="background: #2196f3">ok</div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-tool">
+      <div class="tool-search">
+        <img src="./img/s.png" alt="" />
+        <input type="text" />
+        <div class="tool-search-res">
+          靠近 [kào jìn] <br />
+          prep. near <br />
+          misc. close to <br />
+          (挨近) near; close to; by:
+        </div>
+      </div>
+      <div class="tool-bar">
+        <div class="tool-timer">
+          <div class="tool-timer-area">
+            <div class="tool-timer-N tool-timer-H">
+              <span>00</span>
+              <div>HRS</div>
+            </div>
+            <span>:</span>
+            <div class="tool-timer-N tool-timer-M">
+              <span>00</span>
+              <div>MINS</div>
+            </div>
+            <span>:</span>
+            <div class="tool-timer-N tool-timer-S">
+              <span>00</span>
+              <div>SECS</div>
+            </div>
+          </div>
+          <div class="tool-timer-btn">
+            <div class="tool-timer-btn-1">START</div>
+            <div
+              class="tool-timer-btn-2"
+              style="font-size: 20px; background: #e91e63"
+            >
+              R
+            </div>
+          </div>
+        </div>
+        <div class="tool-music">
+          <div class="tool-music-name">
+            Against the Current - Legends Never Die
+          </div>
+          <img src="./img/before.png" class="tool-music-before" />
+          <img
+            src="./img/play.png"
+            style="width: 50px; height: 50px"
+            class="tool-music-play"
+          />
+          <img
+            src="./img/pause.png"
+            style="width: 50px; height: 50px; display: none"
+            alt=""
+            class="tool-music-pause"
+          />
+          <img src="./img/after.png" alt="" class="tool-music-after" />
+          <audio
+            src="./media/Against the Current - Legends Never Die.mp3"
+            id="tool-music"
+            style="visibility: hidden"
+          >。
+          </audio>
+        </div>
+        <div class="tool-clock">
+          <div class="tool-clock-btn">
+            <div class="tool-clock-btn-1 s">Pomodoro</div>
+            <div class="tool-clock-btn-2">Short Break</div>
+            <div class="tool-clock-btn-3">Long Break</div>
+          </div>
+          <div class="tool-clock-show">25 : 00</div>
+          <div class="tool-clock-start">START</div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-tool-m">
+      <div class="t">T</div>
+      <div class="m">M</div>
+      <div class="p">P</div>
+    </div>
+  </body>
+</html>
